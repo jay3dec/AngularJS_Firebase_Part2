@@ -25,7 +25,7 @@
     </div> 
     <div class="form-group" ng-class="{ 'has-error' : signinForm.password.$invalid }">
         <label>Password</label>
-        <input type="password" name="password" class="form-control" ng-model="user.password" ng-minlength="8">
+        <input type="password" name="password" class="form-control" ng-model="user.password" ng-minlength="3">
         <p class="help-block" ng-show="signinForm.password.$error.minlength">Min password length is 8 characters.</p>
     </div>  
         <label class="checkbox">

@@ -31,7 +31,7 @@
         <label class="checkbox">
           <a href="#/register"> Sign Up</a>
         </label>
-        <button ng-disabled="user.email==undefined || user.password==undefined" type="button" ng-click="SignIn($event)" class="btn btn-lg btn-primary btn-block">SignIn</button>
+        <button ng-disabled="!user.email || !user.password" type="button" ng-click="SignIn($event)" class="btn btn-lg btn-primary btn-block">SignIn</button>
       </form>
 
     </div>
